@@ -9,7 +9,7 @@ int solve(vector<int>& a, vector<int>& b, int n, int m, int k){
         if(b[ptr2] < a[ptr1] - k){ //
             ptr2++;
         }
-        else if(a[ptr1] < b[ptr2]){
+        else if(b[ptr2] > a[ptr1] + k){
             ptr1++;
         }
         else {
